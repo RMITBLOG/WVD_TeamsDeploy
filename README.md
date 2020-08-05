@@ -6,7 +6,6 @@ The Application completes the following:
 2. download all the required components ready for installation
 3. Install all the components and MS teams ready for use on the Windows Virtual Desktop Host.
 
-[[images/WVDTEAMSDPL.PNG]]
 
 How to use the Applicaton:
 
