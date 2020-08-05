@@ -21,9 +21,9 @@ Step 2 Install - install all the required components.
 
 Final point, ensure that you have set the required Custom RDP Properties.
 
-audiocapturemode:i:1 enables audio capture from the local device and redirects audio applications in the remote session.
-audiomode:i:0 plays audio on the local computer.
-camerastoredirect:s:* redirects all cameras.
+audiocapturemode:i:1 (enables audio capture from the local device and redirects audio applications in the remote session.)
+audiomode:i:0 (plays audio on the local computer.)
+camerastoredirect:s:* (redirects all cameras.)
 
 https://docs.microsoft.com/en-us/azure/virtual-desktop/teams-on-wvd 
 
