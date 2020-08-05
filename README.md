@@ -1,5 +1,7 @@
 # WVD_TeamsDeploy
 
+This is only for use on Windows Vritual Desktop Windows 10 Mulitsession desktop Session Hosts.
+
 The Application completes the following:
 
 1. prepare Windows Virtual Desktop host for MS Teams A/V redirection
@@ -10,7 +12,8 @@ The Application completes the following:
 
 How to use the Applicaton:
 
-Run application as an administrator
+Run the application as an administrator or it will not work. 
+
 
 Click Step 1 prepare and download the required components.
 Click Install (only) after completing step 1, 
