@@ -19,6 +19,9 @@ Click Step 1 prepare and download the required components.
 Click Install (only) after completing step 1, 
 Step 2 Install - install all the required components.
 
+Video showing the application running:
+https://vimeo.com/445308467 
+
 Final point, ensure that you have set the required Custom RDP Properties.
 
 audiocapturemode:i:1 (enables audio capture from the local device and redirects audio applications in the remote session.)
