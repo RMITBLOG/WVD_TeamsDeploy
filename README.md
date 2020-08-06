@@ -1,6 +1,6 @@
 # WVD_TeamsDeploy
 
-This is only for use on Windows Vritual Desktop Windows 10 Mulitsession desktop Session Hosts.
+This is only for use on Windows Virtual Desktop Windows 10 Multi-session desktop Session Hosts.
 
 The Application completes the following:
 
@@ -10,7 +10,7 @@ The Application completes the following:
 
 ![alt text](https://github.com/RMITBLOG/WVD_TeamsDeploy/blob/master/WVDTEAMSDPL.PNG?raw=true)
 
-How to use the Applicaton:
+How to use the Application:
 
 Run the application as an administrator or it will not work. 
 
