@@ -27,7 +27,7 @@ Start-Sleep -s 5
 invoke-WebRequest -Uri https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4AQBt -OutFile "C:\temp\MsRdcWebRTCSvc_HostSetup_1.0.2006.11001_x64.msi"
 Start-Sleep -s 5
 #Download Teams 
-invoke-WebRequest -Uri https://statics.teams.cdn.office.net/production-windows-x64/1.3.00.13565/Teams_windows_x64.msi -OutFile "C:\temp\Teams_windows_x64.msi"
+invoke-WebRequest -Uri https://statics.teams.cdn.office.net/production-windows-x64/1.4.00.2879/Teams_windows_x64.msi -OutFile "C:\temp\Teams_windows_x64.msi"
 Start-Sleep -s 5
 
 #Install C++ runtime
@@ -39,3 +39,8 @@ Start-Sleep -s 10
 # Install Teams
 msiexec /i "C:\temp\Teams_windows_x64.msi" /l*v teamsinstall.txt ALLUSER=1 ALLUSERS=1 /q
 Start-Sleep -s 10
+
+
+
+#https://statics.teams.cdn.office.net/production-windows-x64/1.4.00.2879/Teams_windows_x64.msi
+#https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4AQBt
