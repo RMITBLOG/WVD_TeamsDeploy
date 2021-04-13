@@ -20,6 +20,23 @@
 
 # Add registry Key
 reg add "HKLM\SOFTWARE\Microsoft\Teams" /v IsWVDEnvironment /t REG_DWORD /d 1 /f
+# check directory and create if missing
+
+# Define where to store logs
+[string]$temPAth = 'C:\temp\'
+
+# Create folder if does not exist
+if (!(Test-Path -Path $logPath))
+{
+    $paramNewItem = @{
+        Path      = $temPAth
+        ItemType  = 'Directory'
+        Force     = $true
+    }
+
+    New-Item @paramNewItem
+}
+
 #Download C++ Runtime
 invoke-WebRequest -Uri https://aka.ms/vs/16/release/vc_redist.x64.exe -OutFile "C:\temp\vc_redist.x64.exe"
 Start-Sleep -s 5
