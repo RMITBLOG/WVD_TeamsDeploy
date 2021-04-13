@@ -26,7 +26,7 @@ reg add "HKLM\SOFTWARE\Microsoft\Teams" /v IsWVDEnvironment /t REG_DWORD /d 1 /f
 [string]$temPAth = 'C:\temp\'
 
 # Create folder if does not exist
-if (!(Test-Path -Path $logPath))
+if (!(Test-Path -Path $temPAth))
 {
     $paramNewItem = @{
         Path      = $temPAth
