@@ -41,17 +41,17 @@ if (!(Test-Path -Path $temPAth))
 invoke-WebRequest -Uri https://aka.ms/vs/16/release/vc_redist.x64.exe -OutFile "C:\temp\vc_redist.x64.exe"
 Start-Sleep -s 5
 #Download RDCWEBRTCSvc
-invoke-WebRequest -Uri https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4AQBt -OutFile "C:\temp\MsRdcWebRTCSvc_HostSetup_1.0.2006.11001_x64.msi"
+invoke-WebRequest -Uri https://aka.ms/msrdcwebrtcsvc/msi -OutFile "C:\temp\MsRdcWebRTCSvc_HostSetup_0.11.0_x64.msi"
 Start-Sleep -s 5
 #Download Teams 
-invoke-WebRequest -Uri https://statics.teams.cdn.office.net/production-windows-x64/1.4.00.2879/Teams_windows_x64.msi -OutFile "C:\temp\Teams_windows_x64.msi"
+invoke-WebRequest -Uri "https://teams.microsoft.com/downloads/desktopurl?env=production&plat=windows&arch=x64&managedInstaller=true&download=true" -OutFile "C:\temp\Teams_windows_x64.msi"
 Start-Sleep -s 5
 
 #Install C++ runtime
 Start-Process -FilePath C:\temp\vc_redist.x64.exe -ArgumentList '/q', '/norestart'
 Start-Sleep -s 10
 #Install MSRDCWEBTRCSVC
-msiexec /i C:\temp\MsRdcWebRTCSvc_HostSetup_1.0.2006.11001_x64.msi /q /n
+msiexec /i C:\temp\MsRdcWebRTCSvc_HostSetup_0.11.0_x64.msi /q /n
 Start-Sleep -s 10
 # Install Teams
 msiexec /i "C:\temp\Teams_windows_x64.msi" /l*v teamsinstall.txt ALLUSER=1 ALLUSERS=1 /q
